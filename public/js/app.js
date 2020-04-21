@@ -41659,28 +41659,55 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "page" },
-    [
-      _c("nav", { staticClass: "navbar navbar-dark bg-dark" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          [
-            _c(
-              "router-link",
-              { staticClass: "navbar-brand", attrs: { to: { name: "home" } } },
-              [_vm._v("Ilmu Coding")]
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c("router-view")
-    ],
+    [_vm._m(0), _vm._v(" "), _c("router-view")],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pos-f-t" }, [
+      _c(
+        "div",
+        {
+          staticClass: "collapse",
+          attrs: { id: "navbarToggleExternalContent" }
+        },
+        [
+          _c("div", { staticClass: "bg-dark p-4" }, [
+            _c("h5", { staticClass: "text-white h4" }, [
+              _vm._v("Collapsed content")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "text-muted" }, [
+              _vm._v("Toggleable via the navbar brand.")
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("nav", { staticClass: "navbar navbar-dark bg-dark" }, [
+        _c(
+          "button",
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#navbarToggleExternalContent",
+              "aria-controls": "navbarToggleExternalContent",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation"
+            }
+          },
+          [_c("span", { staticClass: "navbar-toggler-icon" })]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
